@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8" >
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="stylesheet" href="blog.css"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <title>Блог</title>
+    </head>
+
+
+<div id="mySidenav" class="sidenav">
+    <!--это нулевая функция
+    тобишь она сбивает настройки ссылки когда нажимаешь на ссылку тебя стандартно куда-то перекидывает
+    это фича отменяет это потому как у тебя на эту ссылку прикручена функция онклик которая что-то делает-->
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="contact.html">Home</a>
+    <a href="blog.html">Блог</a>
+    <a href="https://soundcloud.com/deepmixnation/deep-house-mix-25-2014-hd-best-deep-lounge-chill-music">Музыка</a>
+    <a href="https://www.youtube.com/watch?v=-I1rLzjm8Dk">Видео</a>
+</div>
+
+   <!-- Когда текст подключен к элементу <span>, вы можете стилизовать его с помощью CSS или манипулировать им с помощью JavaScript.-->
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">☰ Головне меню</span>
+    <!--метод document.getElementById() объекта Document возвращает объект Element, представляющий из себя элемент,
+    глобальный атрибут id которого соответствует указанной строке.
+    Если подобный элемент не будет найден, то метод возвратит значение null.-->
+    <!--Ширина блока- width-->
+<script>
+    function openNav() {
+        document.getElementById("mySidenav").style.width = "250px";
+    }
+
+    function closeNav() {
+        document.getElementById("mySidenav").style.width = "0";
+    }
+</script>
+
+    <!--Тег <nav> задает навигацию по сайту. Если на странице несколько блоков ссылок, то в <nav> обычно помещают приоритетные ссылки.-->
+<nav>
+    <ul class="topmenu">
+        <li><a href="blog.html">Blog</a>
+            <ul class="submenu">
+                <li><a href="Rating.html">Rating</a></li>
+
+            </ul>
+        <li><a href="contact.html">Contact</a></li>
+    </ul>
+</nav>
+
+
+<h1>Portfolio</h1>
+
+
+
+<div class="container">
+    <div class="photo" data-title="Пляж в Киеве">
+        <img src="resource/Блог/нарешті/ea77b8ef2f3890e6110eae9bf4875465.jpg" alt="" width="120" height="420">
+    </div>
+    <div class="photo" data-title="Пляж в Украине">
+        <img src="resource/Блог/нарешті/4f1b0a9a5884dd5b60b47d1d996181c4.jpg" alt="" width="120" height="420">
+    </div>
+    <div class="photo" data-title="Пляж в Татраландии">
+        <img src="resource/Блог/нарешті/bfbc5b2181cedb6c68f357823c20f806.jpg" alt="" width="120" height="420">
+    </div>
+</div>
+
+
+<h1>Фото клиентов</h1>
+
+<p class="thumb1">
+    <a id="example5" href="https://sun1-97.userapi.com/hgHfwe4X67jbxiObIXpQrDorjSGckdBZlx6Rpg/I0V2EgUNqVQ.jpg">
+        <img alt="example2" src="https://sun1-97.userapi.com/hgHfwe4X67jbxiObIXpQrDorjSGckdBZlx6Rpg/I0V2EgUNqVQ.jpg"/>
+    </a>
+    <a id="example2"
+       href="https://images.vinted.net/thumbs/02a60_5Uz56jZtDuATeJZuBTZpHBt6.jpeg?1563612769-cfdd444a5c3c63fd9abe10e8f2ca3ecdc5f82a83">
+        <img alt="example2"
+             src="https://images.vinted.net/thumbs/02a60_5Uz56jZtDuATeJZuBTZpHBt6.jpeg?1563612769-cfdd444a5c3c63fd9abe10e8f2ca3ecdc5f82a83"/>
+    </a>
+
+    <a id="example3" href="https://sun1-84.userapi.com/ZZyFBng8zhhSCbbmUbAkyAgRBtK2z56fSHQ43w/q0WLboFyL4E.jpg">
+        <img alt="example3" src="https://sun1-84.userapi.com/ZZyFBng8zhhSCbbmUbAkyAgRBtK2z56fSHQ43w/q0WLboFyL4E.jpg"/>
+    </a>
+</p>
+
+
+<h1 id="myHeadsew">Вашій увазі надається фото з відпочинку відомих людей</h1>
+
+<p class="thumb">
+    <img src="resource/Блог/segulaissue_70498788_405636596806601_1099674820144553180_n.jpg" alt="a" width="986"
+         height="386">
+
+    <img src="resource/Блог/RR00OI3eFa8.jpg" alt="m" width="986" height="386">
+
+    <img src="resource/Блог/нарешті/bb4bd9d82de76edf877c18dd2f98270e.jpg" alt="n" height="386" width="986">
+</p>
+<div id="statya">
+    <img src="resource/Блог/animation.jpg" alt="b" width="986" height="386">
+</div>
+<br>
+<br>
+<p class="thumb1">
+    <img src="resource/Блог/segulaissue_74945040_537202873741382_9953880878775315_n.jpg" alt="c" width="986"
+         height="386">
+
+    <img src="resource/Блог/segulaissue_78815166_1366091590240038_1762994474585379224_n.jpg" alt="x" width="986"
+         height="386">
+
+    <img src="resource/Блог/segulaissue_79302633_196437618069597_8695942962980123134_n.jpg" alt="z" width="986"
+         height="386">
+</p>
+
+
+<h1> Милейшое создание</h1>
+<div id="container">
+    <div id="butterfly">
+        <div id="leftwing"></div>
+        <div id="rightwing"></div>
+    </div>
+</div>
+
+
+<footer id="myFooter">
+    <div class="container">
+        <ul>
+            <li><a href="Contact.html">Contact us</a></li>
+            <li><a href="Rating.html">Reviews</a></li>
+            <li><a href="Blog.html">Blog</a></li>
+        </ul>
+        <p class="footer-copyright">© 2020 Copyright Text</p>
+    </div>
+    <div class="footer-social">
+        <a href="https://www.facebook.com/groups/aussia/" class="social-icons"><i class="fa fa-facebook"></i></a>
+        <a href="https://www.google.com/search?q=%D0%B0%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F&oq=%D0%B0%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F+&aqs=chrome..69i57j0l5j69i60j69i61.3192j0j7&sourceid=chrome&ie=UTF-8"
+           class="social-icons"><i class="fa fa-google-plus"></i></a>
+        <a href="https://twitter.com/hashtag/%D0%B0%D0%B2%D1%81%D1%82%D1%80%D0%B0%D0%BB%D0%B8%D1%8F"
+           class="social-icons"><i class="fa fa-twitter"></i></a>
+    </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+</body></html>

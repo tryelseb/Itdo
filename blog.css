@@ -1,0 +1,551 @@
+ body {
+        margin: 0;
+        text-align: center;
+    }
+
+    h1 {
+        font-family: 'Cinzel', serif;
+        color: #000000;
+        text-shadow: 2px 2px 0 #D9D9D9, 4px 4px 0 #353535;
+    }
+
+    #container {
+        background: url(http://localhost:63342/untitled1/resource/%D0%91%D0%BB%D0%BE%D0%B3/segulaissue_72148794_2109022332739859_5342189476247835834_n.jpg) no-repeat;
+        -webkit-perspective: 600px;
+        -webkit-perspective-origin: 50% 0%;
+        perspective: 600px;
+        perspective-origin: 50% 0%;
+        width: 660px;
+        height: 100%;
+        margin: 50px auto 0;
+    }
+
+    #butterfly {
+        position: relative;
+        width: 350px;
+        height: 312px;
+        -webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+        -ms-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+        transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5);
+        -webkit-transform-origin: 100% 0%;
+        -ms-transform-origin: 100% 0%;
+        transform-origin: 100% 0%;
+        -webkit-transform-style: preserve-3d;
+        -ms-transform-style: preserve-3d;
+        transform-style: preserve-3d;
+        -webkit-animation: butterfly 5s linear infinite;
+        animation: butterfly 5s linear infinite;
+    }
+
+    #leftwing {
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 200px;
+        height: 312px;
+        background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+        background-repeat: no-repeat;
+        -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        -ms-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        -webkit-transform-origin: inherit;
+        -ms-transform-origin: inherit;
+        transform-origin: inherit;
+        -webkit-animation: leftwing 0.2s linear infinite;
+        animation: leftwing 0.2s linear infinite;
+    }
+
+    #rightwing {
+        position: absolute;
+        left: 175px;
+        top: 0px;
+        width: 200px;
+        height: 312px;
+        background-image: url(https://html5book.ru/wp-content/uploads/2015/06/butterfly.png);
+        background-repeat: no-repeat;
+        -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        -ms-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        -webkit-transform-origin: inherit;
+        -ms-transform-origin: inherit;
+        transform-origin: inherit;
+        -webkit-animation: rightwing 0.2s linear infinite;
+        animation: rightwing 0.2s linear infinite;
+    }
+
+    @-webkit-keyframes butterfly {
+        from {
+            -webkit-transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        25% {
+            -webkit-transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        50% {
+            -webkit-transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        75% {
+            -webkit-transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        to {
+            -webkit-transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+    }
+    @keyframes butterfly {
+        from {
+            transform: rotate3d(0, 1, 0, 0deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        25% {
+            transform: rotate3d(0, 1, 0, -90deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        50% {
+            transform: rotate3d(0, 1, 0, -180deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        75% {
+            transform: rotate3d(0, 1, 0, -270deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+        to {
+            transform: rotate3d(0, 1, 0, -360deg) scale3d(0.5, 0.5, 0.5) translate3d(-150px, 300px, 0);
+        }
+    }
+    @-webkit-keyframes rightwing {
+        from {
+            -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        }
+        50% {
+            -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+        }
+        to {
+            -webkit-transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        }
+    }
+    @keyframes rightwing {
+        from {
+            transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        }
+        50% {
+            transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 100deg);
+        }
+        to {
+            transform: rotateX(90deg) translate3d(-178px, 0, 0) rotate3d(0, 1, 0, 180deg);
+        }
+    }
+    @-webkit-keyframes leftwing {
+        from {
+            -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        }
+        50% {
+            -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+        }
+        to {
+            -webkit-transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        }
+    }
+    @keyframes leftwing {
+        from {
+            transform: rotateX(90deg) rotate3d(0, 1, 0, 0deg);
+        }
+        50% {
+            transform: rotateX(90deg) rotate3d(0, 1, 0, 80deg);
+        }
+        to {
+            transform: rotateX(90deg) rotate3d(0, 1, 0, 00deg);
+        }
+    }
+
+
+    img {
+        width: 300px;
+        transition: width 1.0s ease;
+    }
+
+    #statya:hover img {
+        width: 500px;
+        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    }
+
+    .thumb img {
+        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+        margin-right: 50px; /* Отступ справа */
+        margin-bottom: 50px; /* Отступ снизу */
+    }
+
+    .thumb1 img {
+        box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+        margin-right: 10px; /* Отступ справа */
+        margin-bottom: 10px; /* Отступ снизу */
+    }
+
+    .thumb1 img {
+        border: 3px solid powderblue; /* Рамка вокруг изображения-ссылки */
+    }
+
+    a:hover img {
+        border: 3px solid deepskyblue; /* Рамка при наведении на ссылку курсора мыши */
+    }
+
+    .photo {
+        display: inline-block; /* Строчно-блочный элемент */
+        position: relative; /* Относительное позиционирование */
+    }
+
+    .photo:hover::after {
+        content: attr(data-title); /* Выводим текст */
+        position: absolute; /* Абсолютное позиционирование */
+        left: 35%;
+        top: 45%; /* Положение подсказки */
+        z-index: 1; /* Отображаем подсказку поверх других элементов */
+        background: powderblue; /* Полупрозрачный цвет фона */
+        font-family: Arial, sans-serif; /* Гарнитура шрифта */
+        font-size: 11px; /* Размер текста подсказки */
+        padding: 5px 10px; /* Поля */
+        border: 1px solid white; /* Параметры рамки */
+    }
+
+
+    * {
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
+    }
+
+    nav {
+        background: #fafcff;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav a {
+        text-decoration: none;
+        outline: none;
+        display: block;
+        transition: .4s ease-in-out;
+    }
+
+    .topmenu {
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .topmenu > li {
+        display: inline-block;
+        position: relative;
+    }
+
+    .topmenu > li:after {
+        content: "";
+        position: absolute;
+        right: 0;
+        width: 1px;
+        height: 12px;
+        background: #d2d2d2;
+        top: 16px;
+        box-shadow: 4px -2px 0 #d2d2d2;
+        transform: rotate(30deg);
+    }
+
+    .topmenu > li:last-child:after {
+        background: none;
+        box-shadow: none;
+    }
+
+    .topmenu > li > a {
+        padding: 12px 26px;
+        color: #000000;
+        text-transform: uppercase;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: 'Exo 2', sans-serif;
+    }
+
+    .topmenu li a:hover {
+        color: #c0a97a;
+    }
+
+    .submenu {
+        position: absolute;
+        left: 50%;
+        top: 100%;
+        width: 210px;
+        margin-left: -105px;
+        background: #fafafa;
+        border: 1px solid #ededed;
+        z-index: 5;
+        visibility: hidden;
+        opacity: 0;
+        transform: scale(.8);
+        transition: .4s ease-in-out;
+    }
+
+    .submenu li a {
+        padding: 10px 0;
+        margin: 0 10px;
+        border-bottom: 1px solid #efefef;
+        font-size: 12px;
+        color: #484848;
+        font-family: 'Kurale', serif;
+    }
+
+    .topmenu > li:hover .submenu {
+        visibility: visible;
+        opacity: 1;
+        transform: scale(1);
+    }
+
+
+    #myFooter {
+        padding-top: 32px;
+    }
+
+    #myFooter .container {
+        text-align: center;
+    }
+
+    #myFooter .footer-copyright {
+        margin-bottom: 35px;
+        text-align: center;
+        color: #777;
+    }
+
+    #myFooter ul {
+        list-style-type: none;
+        padding: 0;
+        margin-bottom: 18px;
+    }
+
+    #myFooter a {
+        color: #282b2d;
+        font-size: 18px;
+    }
+
+    #myFooter li {
+        display: inline-block;
+        margin: 0px 15px;
+        line-height: 2;
+    }
+
+    #myFooter .footer-social {
+        text-align: center;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        background-color: #eee;
+    }
+
+    #myFooter .fa {
+        font-size: 36px;
+        margin-right: 15px;
+        margin-left: 20px;
+        background-color: white;
+        color: #d0d0d0;
+        border-radius: 51%;
+        padding: 10px;
+        height: 60px;
+        width: 60px;
+        text-align: center;
+        line-height: 43px;
+        text-decoration: none;
+        transition: color 0.2s;
+    }
+
+    #myFooter .fa-facebook:hover {
+        color: #2b55ff;
+    }
+
+    #myFooter .fa-facebook:focus {
+        color: #2b55ff;
+    }
+
+    #myFooter .fa-google-plus:hover {
+        color: red;
+    }
+
+    #myFooter .fa-google-plus:focus {
+        color: red;
+    }
+
+    #myFooter .fa-twitter:hover {
+        color: #00aced;
+
+    }
+
+    #myFooter .fa-twitter:focus {
+        color: #00aced;
+    }
+
+    html {
+        height: 100%;
+    }
+
+    body {
+        display: flex;
+        display: -webkit-flex;
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        *height: 100%;
+    }
+
+    .content {
+        flex: 1 0 auto;
+        -webkit-flex: 1 0 auto;
+        min-height: 200px;
+    }
+
+
+    #myFooter {
+        flex: 0 0 auto;
+        -webkit-flex: 0 0 auto;
+    }
+
+ @media not all and (min-width: 600px) and (max-resolution: 1.8dppx) {
+
+     body{
+         min-width: 16rem;
+         margin:auto;
+         width: 100%;
+         display: flex;
+         flex-direction: column;
+     }
+     nav > ul{
+         list-style: none;
+         display: flex;
+         /*padding-inline-start: 1em;*/
+         flex-direction: row;
+     }
+     li{
+         flex-grow: 1; /*щоб забрали целу шірку*/
+     }
+
+
+     body > footer{
+         order: 1; /*щоб був останнім. інші мають імпліцітну годноту нуль, зобраз*я са подля порадья в хтмл*/
+     }
+
+ }
+
+
+ /* panel zboku + text */
+ body {
+     font-family: "Lato", sans-serif;
+ }
+
+ .sidenav {
+     height: 100%;
+     width: 0;
+     position: fixed;
+     z-index: 1;
+     top: 0;
+     left: 0;
+     background-color: #f6fff8;
+     overflow-x: hidden;
+     transition: 0.5s;
+     padding-top: 60px;
+ }
+
+ .sidenav a {
+     padding: 8px 8px 8px 32px;
+     text-decoration: none;
+     font-size: 25px;
+     color: #000000;
+     display: block;
+     transition: 0.3s;
+ }
+
+ .sidenav a:hover {
+     color: #f1f1f1;
+ }
+
+ .sidenav .closebtn {
+     position: absolute;
+     top: 0;
+     right: 25px;
+     font-size: 36px;
+     margin-left: 50px;
+ }
+
+ @media screen and (max-height: 450px) {
+     .sidenav {padding-top: 15px;}
+     .sidenav a {font-size: 18px;}
+ }
+
+/*
+для принетра
+*/
+
+
+ @media print {
+     body {
+         color: #000;
+         background: #fff;
+     }
+ }
+ @media print {
+     h1 {
+         color: #000;
+         background: none;
+     }
+
+     nav, aside {
+         display: none;
+     }
+
+     body, article {
+         width: 100%;
+         margin: 0;
+         padding: 0;
+     }
+
+     @page {
+         margin: 2cm;
+     }
+ }
+
+@media print {
+    img {
+        max-width: 100% !important;
+    }
+    h2, h3 {
+        page-break-after: avoid;
+    }
+    article {
+        page-break-before: always;
+    }
+    ul, img {
+        page-break-inside: avoid;
+    }
+}
+ @media print {
+     article a {
+         font-weight: bolder;
+         text-decoration: none;
+     }
+
+     article a[href^=http]:after {
+         content:" <" attr(href) "> ";
+     }
+ }
+
+
+
+
+ p {
+     animation-duration: 3s;
+     animation-name: slidein;
+ }
+
+ @keyframes slidein {
+     from {
+         margin-left: 100%;
+         width: 300%;
+     }
+
+     to {
+         margin-left: 0%;
+         width: 100%;
+     }
+ }

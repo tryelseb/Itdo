@@ -1,0 +1,651 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 15px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+}
+
+.column {
+    padding: 0 15px;
+}
+
+.wrap {
+    width: 400px;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.column-12 {
+    flex: 0 0 100%;
+}
+
+.column-1 {
+    flex: 0 0 calc((100% / 12) * 1);
+}
+.column-2 {
+    flex: 0 0 calc((100% / 12) * 2);
+}
+.column-3 {
+    flex: 0 0 calc((100% / 12) * 3);
+}
+.column-4 {
+    flex: 0 0 calc((100% / 12) * 4);
+}
+.column-5 {
+    flex: 0 0 calc((100% / 12) * 5);
+}
+.column-6 {
+    flex: 0 0 calc((100% / 12) * 6);
+}
+.column-7 {
+    flex: 0 0 calc((100% / 12) * 7);
+}
+.column-8 {
+    flex: 0 0 calc((100% / 12) * 8);
+}
+.column-9 {
+    flex: 0 0 calc((100% / 12) * 9);
+}
+.column-10 {
+    flex: 0 0 calc((100% / 12) * 10);
+}
+.column-11 {
+    flex: 0 0 calc((100% / 12) * 11);
+}
+
+.text {
+    border: 1px solid #000;
+    min-height: 150px;
+}
+.sidebar {
+    min-height: 300px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+    height: 100%;
+}
+.content {
+    min-height: 150px;
+    background-color: #f6fff8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.header {
+    padding: 20px;
+    min-height: 80px;
+    margin-bottom: 30px;
+    display: inline;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+}
+.mb-30 {
+    margin-bottom: 30px;
+}
+.footer {
+    padding: 5px;
+    min-height: 90px;
+    margin-top: 30px;
+    border: 1px solid #eeeeee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-transform: uppercase;
+
+}
+
+@media screen and (max-width: 639px) {
+    .col-small-12 {
+        flex: 0 0 100%;
+    }
+    .sidebar {
+        margin-bottom: 15px;
+    }
+    .mb-30 {
+        margin-bottom: 0;
+    }
+    .content {
+        margin-top: 15px;
+    }
+    .header {
+        margin-bottom: 15px;
+    }
+    article {
+        margin-top: 15px;
+    }
+    .footer {
+        margin-top: 15px;
+    }
+}
+
+
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+.sidebar a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 35px;
+    color: #909591;
+    display: block;
+}
+
+.sidebar a:hover {
+    color: #000000;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background: url(https://html5book.ru/wp-content/uploads/2015/10/background54.png)
+}
+
+nav {
+    background: #fafcff;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav a {
+    text-decoration: none;
+    outline: none;
+    display: block;
+    transition: .4s ease-in-out;
+}
+
+.topmenu {
+    text-align: center;
+    padding: 10px 0;
+}
+
+.topmenu > li {
+    display: inline-block;
+    position: relative;
+}
+
+.topmenu > li:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    width: 1px;
+    height: 12px;
+    background: #d2d2d2;
+    top: 16px;
+    box-shadow: 4px -2px 0 #d2d2d2;
+    transform: rotate(30deg);
+}
+
+.topmenu > li:last-child:after {
+    background: none;
+    box-shadow: none;
+}
+
+.topmenu > li > a {
+    padding: 12px 26px;
+    color: #000000;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.topmenu li a:hover {
+    color: #c0a97a;
+}
+
+.submenu {
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    width: 210px;
+    margin-left: -105px;
+    background: #fafafa;
+    border: 1px solid #ededed;
+    z-index: 5;
+    visibility: hidden;
+    opacity: 0;
+    transform: scale(.8);
+    transition: .4s ease-in-out;
+}
+
+.submenu li a {
+    padding: 10px 0;
+    margin: 0 10px;
+    border-bottom: 1px solid #efefef;
+    font-size: 12px;
+    color: #484848;
+    font-family: 'Kurale', serif;
+}
+
+.topmenu > li:hover .submenu {
+    visibility: visible;
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+
+img {
+    width: 300px;
+    transition: width 1.0s ease;
+}
+
+#statya:hover img {
+    width: 500px;
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+}
+
+.thumb img {
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    margin-right: 50px; /* Отступ справа */
+    margin-bottom: 50px; /* Отступ снизу */
+}
+
+.thumb1 img {
+    box-shadow: 0.4em 0.4em 5px rgba(122, 122, 122, 0.5);
+    margin-right: 10px; /* Отступ справа */
+    margin-bottom: 10px; /* Отступ снизу */
+}
+
+.thumb1 img {
+    border: 3px solid #484948; /* Рамка вокруг изображения-ссылки */
+}
+
+a:hover img {
+    border: 3px solid #000000; /* Рамка при наведении на ссылку курсора мыши */
+}
+
+.photo {
+    display: inline-block; /* Строчно-блочный элемент */
+    position: relative; /* Относительное позиционирование */
+}
+
+.photo:hover::after {
+    content: attr(data-title); /* Выводим текст */
+    position: absolute; /* Абсолютное позиционирование */
+    left: 35%;
+    top: 45%; /* Положение подсказки */
+    z-index: 1; /* Отображаем подсказку поверх других элементов */
+    background: powderblue; /* Полупрозрачный цвет фона */
+    font-family: Arial, sans-serif; /* Гарнитура шрифта */
+    font-size: 11px; /* Размер текста подсказки */
+    padding: 5px 10px; /* Поля */
+    border: 1px solid white; /* Параметры рамки */
+}
+
+iframe{
+    border-width: 0px;
+}
+
+
+#myFooter {
+    background-color: #ffffff;
+    color: #ffffff;
+    padding-top: 20px;
+}
+
+#map-container {
+    height: 240px;
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+#myFooter .row {
+    margin: 0 85px;
+}
+
+#myFooter .footer-copyright {
+    background-color: #10222e;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    text-align: center;
+}
+
+#myFooter .footer-copyright p {
+    margin: 10px;
+    color: #ccc;
+}
+
+#myFooter .container {
+    width: auto;
+}
+
+#myFooter ul {
+    list-style-type: none;
+    padding-left: 0;
+    line-height: 1.7;
+}
+
+#myFooter h5 {
+    font-size: 18px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 30px;
+}
+
+#myFooter a {
+    color: #000000;
+    text-decoration: none;
+}
+
+#myFooter a:hover,
+#myFooter a:focus {
+    text-decoration: none;
+    color: #000000;
+}
+
+#myFooter .social-networks {
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 38px;
+}
+
+#myFooter .fa {
+    font-size: 30px;
+    margin-right: 15px;
+    margin-left: 20px;
+    background-color: white;
+    color: #182c39;
+    border-radius: 51%;
+    padding: 10px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 31px;
+    text-decoration: none;
+    transition: color 0.2s;
+}
+
+#myFooter .fa-facebook:hover {
+    color: #2b55ff;
+}
+
+#myFooter .fa-facebook:focus {
+    color: #2b55ff;
+}
+
+#myFooter .fa-google-plus:hover {
+    color: red;
+}
+
+#myFooter .fa-google-plus:focus {
+    color: red;
+}
+
+#myFooter .fa-twitter:hover {
+    color: #00aced;
+}
+
+#myFooter .fa-twitter:focus {
+    color: #00aced;
+}
+
+@media screen and (max-width: 767px) {
+    #myFooter {
+        text-align: center;
+    }
+    #myFooter .row {
+        margin: 0;
+    }
+}
+
+
+
+/* CSS used for positioning the footers at the bottom of the page. */
+/* You can remove this. */
+
+html{
+    height: 100%;
+}
+
+body{
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    height: 100%;
+}
+
+.content{
+    flex: 1 0 auto;
+    -webkit-flex: 1 0 auto;
+    min-height: 200px;
+}
+
+#myFooter{
+    flex: 0 0 auto;
+    -webkit-flex: 0 0 auto;
+}
+
+
+
+p {
+    animation-duration: 3s;
+    animation-name: slidein;
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%;
+    }
+
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+
+
+div#myDiv {
+    -ms-transform: rotate(20deg); /* IE 9 */
+    -webkit-transform: rotate(20deg); /* Safari */
+    transform: rotate(20deg); /* Standard syntax */
+}
+
+
+.forecast {
+    margin: 0;
+    padding: .3rem;
+    background-color: #eee;
+    font: 1rem 'Fira Sans', sans-serif;
+}
+
+.forecast > h1,
+.day-forecast {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.day-forecast {
+    background: right/contain content-box border-box no-repeat
+    url(https://img1.freepng.ru/20180311/lke/kisspng-hot-air-balloon-white-cloud-clouds-5aa4f182ab8349.3861553715207591707025.jpg) white;
+}
+
+.day-forecast > h2,
+.day-forecast > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+
+
+
+.accordion {
+    background-color: #eee;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+}
+
+.active, .accordion:hover {
+    background-color: #ccc;
+}
+
+.accordion:after {
+    content: '\002B';
+    color: #777;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+
+.panel {
+    padding: 0 18px;
+    background-color: white;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+
+
+.tab {
+    overflow: hidden;
+    border: 1px solid #ccc;
+    background-color: #f1f1f1;
+}
+
+/* Style the buttons that are used to open the tab content */
+.tab button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+    background-color: #ddd;
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+    background-color: #ccc;
+}
+
+/* Style the tab content */
+.tabcontent {
+    display: none;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+form {
+    max-width: 500px;
+}
+label{
+    display: block;
+    margin-bottom: 20px;
+
+}
+
+
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type=url] {
+    width: 100%;
+    background-color: #f6fff8;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+button[type=button]:hover {
+    background-color: #a0101f;
+}
+
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+
+.col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+}
+
+/* Floating column for inputs: 75% width */
+.col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+}
+
+@media screen and (max-width: 600px) {
+    .col-25, .col-75, button[type=button] {
+        width: 100%;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+
+
